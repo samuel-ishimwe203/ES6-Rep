@@ -1,10 +1,3 @@
-// destructuring 
-
-function greet([first , second]){
-    console.log(first,second)
-}
-greet([300, 400, 450])
-greet([300, 400, 450])
 
 // for...of loop it iterates over values of iterable(like array, string , maps ,set etc)
 
@@ -20,5 +13,17 @@ for(const arr of matrix){
     }
 
 }
+
+
+const myMap = new Map([
+  ["name", "Ishimwe"],
+  ["age", 22],
+  ["country", "Rwanda"]
+]);
+
+for (const [key, value] of myMap) {
+  console.log(`${key} => ${value}`);
+}
+
 
    
