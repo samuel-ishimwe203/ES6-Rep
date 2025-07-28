@@ -26,4 +26,16 @@ for (const [key, value] of myMap) {
 }
 
 
+
+function sum(){
+  let total=0
+  for(const argument of arguments){
+    total+=argument
+  }
+  return total
+}
+
+console.log(sum(1,2,3,4,5,6))
+
+
    
