@@ -26,3 +26,23 @@ console.log(`My name is ${template.name} and I am ${template.age} year `)
 
  const {name ,email,city}=obj
  console.log([name,email,city,])
+
+let val1 = 6;
+let val2 = 5;
+
+console.log("Before:");
+console.log("val1 =", val1); 
+console.log("val2 =", val2); 
+
+[val1, val2] = [val2, val1]; 
+
+console.log("After:");
+console.log("val1 =", val1);
+console.log("val2 =", val2); 
+
+
+
+
+
+
+
