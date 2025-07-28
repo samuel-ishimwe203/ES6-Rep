@@ -14,3 +14,15 @@ console.log(multEachArrayEle([1,3,4,5,6]))
 
 const template={name:'samuel',age:25}
 console.log(`My name is ${template.name} and I am ${template.age} year `)
+
+// Give a user object with nested properties , use destructuring to extract specific values like email , and city
+
+ const obj={
+       name:'samuel',
+       location:'kigali',
+       email:'samuel@gmail.com',
+       city:'Nyagatare'
+ }
+
+ const {name ,email,city}=obj
+ console.log([name,email,city,])
