@@ -50,3 +50,23 @@ class person{
 const newClass =new person('samuel',22)
 newClass.greet()
 
+// class in private field 
+
+class bankAccount{
+    #balance =0;
+
+    deposite(Amount){
+        this.#balance+=Amount;
+   }
+
+   getBalance(){
+    return this.#balance
+   }
+}
+
+const account = new bankAccount();
+account.deposite(1000)
+account.deposite(100)
+account.deposite(1000)
+account.deposite(100)
+console.log(account.getBalance())
