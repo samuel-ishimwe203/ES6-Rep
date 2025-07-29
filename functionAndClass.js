@@ -33,3 +33,20 @@ function greet({floors=1 , color='red' , walls='bricks'}={}){
     console.log(`your house has ${floors} floor with ${color} ${walls} wall`)
 }
 greet()
+
+// class 
+
+class person{
+    constructor(name, age){
+        this.name=name,
+        this.age=age
+    }
+
+    greet(){
+        console.log(`Hy my name is ${this.name} and i have ${this.age} years old`)
+    }
+}
+
+const newClass =new person('samuel',22)
+newClass.greet()
+
