@@ -27,3 +27,9 @@ console.log(math)
 console.log(Englis)
 
 
+// function that passed object as orguments
+
+function greet({floors=1 , color='red' , walls='bricks'}={}){
+    console.log(`your house has ${floors} floor with ${color} ${walls} wall`)
+}
+greet()
