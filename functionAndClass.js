@@ -70,3 +70,5 @@ account.deposite(100)
 account.deposite(1000)
 account.deposite(100)
 console.log(account.getBalance())
+
+

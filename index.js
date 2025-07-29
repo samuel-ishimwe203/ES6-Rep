@@ -56,4 +56,21 @@ function negPos(arr){
 console.log(negPos([-3,-4,-2,1,3,4]))
 
 
+// reverse the last word of your words
+
+function greet(str){
+    
+    const arr=str.split(' ')
+    const array = arr.slice(-1).join('')
+    
+    const result= arr.slice(0,3).join(' ')
+    const  result2= array.split('').reverse().join('')
+    
+    return [result , result2].join(' ')
+   
+    
+    }
+
+console.log(greet('I love JavaScript programming'))
+
    
