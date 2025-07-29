@@ -73,4 +73,16 @@ function greet(str){
 
 console.log(greet('I love JavaScript programming'))
 
+// function that takes an number of arguments and return the sum using rest parameter
+
+  function Greeting(...number){
+     
+    return number.reduce((acc,curr)=>acc+curr,0)
+
+  }
+
+  console.log(Greeting(4,5,4,3,2))
+   console.log(Greeting(1,2,3,4,5,6,7,8,9))
+    console.log(Greeting())
+
    
