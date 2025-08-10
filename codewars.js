@@ -72,3 +72,13 @@ function dividedBy(num1) {
 }
 
 console.log(seven(dividedBy(five())))
+
+
+// merge two sorted array
+
+function sortedArray(arr1,arr2){
+    const array1=arr1.sort((a,b)=>a-b)
+    const array2=arr2.sort((a,b)=>a-b)
+    return [...array1,...array2]
+}
+console.log(sortedArray([5,1,2,3,4],[8,7,9]))
