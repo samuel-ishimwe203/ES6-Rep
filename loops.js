@@ -73,3 +73,21 @@ function greet(string, symbol){
 
 }
 console.log(greet('my name is samuel ishimwe I am from Rwanda Nyagatare and I am 22 years old','*'))
+
+
+// find the missing number 
+
+
+function missingDuplicate(arr){
+    const n = arr.length+1;
+    const sum1=n * (n + 1) / 2
+    const sum2=arr.reduce((acc,curr)=>acc+curr,0)
+    const result =sum1-sum2
+
+    const duplicate = arr.filter((el,ind)=>arr.indexOf(el)!==ind)
+
+    // return result
+    return [result,duplicate]
+
+}
+console.log(missingDuplicate([1,2,4,5,2]))
