@@ -62,3 +62,14 @@ const array4=[9,8,4,3,1]
 for(let values of array4){
     console.log(values)
 }
+
+
+// To insert symbol to index position 2 of string
+
+function greet(string, symbol){
+
+    const array = string.split(' ').map((ele,ind)=>ele.split('').map((ele,ind)=>ind==2 ?`${ele} ${symbol}`:ele).join("")).join(' ')
+    return array
+
+}
+console.log(greet('my name is samuel ishimwe I am from Rwanda Nyagatare and I am 22 years old','*'))
