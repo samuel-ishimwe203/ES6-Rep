@@ -37,3 +37,28 @@ const obj3 ={
 
 const objArray = Object.values(obj3)
 console.log(objArray)
+
+
+// for in access object's property and array's index
+
+const obj4 ={
+    name:'Hirwa',
+    age:25,
+    address: 'kigali'
+}
+
+for(let ind in obj4){
+    console.log(obj4[ind])
+}
+
+const ar=[1,3,4,5,6]
+for(let ind in ar){
+    console.log(ind)
+}
+
+// for of used in array to access values of array
+
+const array4=[9,8,4,3,1]
+for(let values of array4){
+    console.log(values)
+}
