@@ -15,4 +15,25 @@ for(let i=0; i<objArr.length;i++){
 }
 
 
+// what is output of Object.entries
 
+const obj2 ={
+    name:'mucyo',
+    age:24,
+    address:'Nyagatare'
+}
+
+const objArra = Object.entries(obj2)
+console.log(objArra)
+console.log(objArra[0][1])
+ 
+// what is output of Object.values
+
+const obj3 ={
+    name:'mucyo',
+    age:24,
+    address:'Nyagatare'
+}
+
+const objArray = Object.values(obj3)
+console.log(objArray)
