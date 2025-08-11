@@ -78,7 +78,7 @@ console.log(greet('my name is samuel ishimwe I am from Rwanda Nyagatare and I am
 // find the missing number 
 
 
-function missingDuplicate(arr){
+function solution(arr){
     const n = arr.length+1;
     const sum1=n * (n + 1) / 2
     const sum2=arr.reduce((acc,curr)=>acc+curr,0)
@@ -86,8 +86,27 @@ function missingDuplicate(arr){
 
     const duplicate = arr.filter((el,ind)=>arr.indexOf(el)!==ind)
 
-    // return result
-    return [result,duplicate]
+    
+    return [result,duplicate].flat()
 
 }
 console.log(missingDuplicate([1,2,4,5,2]))
+
+
+// correct one in code wars
+
+function missingNumber(number){
+    const max = Math.max.apply(null, number)
+    const finds = []
+    const final = []
+    
+    for(i = 1; i<=max; i++){
+        finds.push(i)
+    }
+    const miss = finds.filter(num => !number.includes(num))
+    const duplicate = number.filter((el,ind)=>number.indexOf(el)!==ind)
+
+    return [duplicate,miss].flat()
+    
+}
+console.log( missingNumber([1,2,3,4,4,6]))
